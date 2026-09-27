@@ -35,7 +35,7 @@
 
 <h2>會經網絡傳送嘅資料（只喺你主動使用時）</h2>
 <ul>
-  <li><b>✨ 寫作工具（AI）</b>：預設關閉。開啟並撳某個 AI 功能（例如校對、改寫、翻譯）時，你揀咗嘅文字會經加密連線（HTTPS）傳送去 x2Board 伺服器（Cloudflare），再交畀 Z.ai 處理，然後將結果傳返畀你。同時會傳送一個喺你部手機隨機產生嘅 ID（唔係你嘅帳戶、電話號碼或者裝置序號），只係用嚟計每部機每日最多 100 次；伺服器只會記住當日嘅次數，第二日就刪除。x2Board 同佢嘅伺服器都唔會儲存或者記錄你嘅文字；Z.ai 點處理資料以佢嘅私隱政策為準。格式化 JSON / HTML 只喺手機做；密碼欄唔會提供寫作工具。</li>
+  <li><b>✨ 寫作工具（AI）</b>：預設關閉。開啟並撳某個 AI 功能（例如校對、改寫、翻譯）時，你揀咗嘅文字會經加密連線（HTTPS）傳送去 x2 伺服器處理，然後將結果傳返畀你。x2 伺服器會使用第三方 AI 服務供應商生成結果，供應商會按佢自己嘅私隱政策處理文字。同時會傳送一個喺你部手機隨機產生嘅 ID（唔係你嘅帳戶、電話號碼或者裝置序號），只係用嚟計每部機每日最多 100 次；伺服器只會記住當日嘅次數，第二日就刪除。x2 伺服器唔會儲存或者記錄你嘅文字。格式化 JSON / HTML 只喺手機做；密碼欄唔會提供寫作工具。</li>
   <li><b>🎤 聽寫</b>：撳 🎤 時，錄音交畀你手機內置嘅語音辨識服務（通常係 Google）轉做文字。x2Board 本身唔會儲存或者上載錄音。</li>
   <li><b>手寫辨識</b>：第一次用手寫時會由 Google 下載辨識模型；之後辨識喺手機上完成，筆跡唔會上載。</li>
   <li><b>自動填入</b>：密碼、驗證碼同地址建議由你揀嘅 Android 自動填入服務（例如 Google）提供，x2Board 只係顯示。</li>
@@ -74,7 +74,7 @@
 
 <h2>Data sent over the network, only when you use a feature</h2>
 <ul>
-  <li><b>✨ Writing Tools (AI)</b>: off by default. When it is on and you tap an AI action (for example proofread, rewrite or translate), the selected text is sent over an encrypted HTTPS connection to the x2Board server (Cloudflare), which passes it to Z.ai for processing and returns the result. A random ID made on your phone is sent with it (not your account, phone number or device serial), only to allow each phone up to 100 actions a day; the server keeps only today's count and deletes it the next day. Neither x2Board nor its server stores or logs your text; Z.ai handles it under its own privacy policy. JSON / HTML formatting runs on the phone, and Writing Tools is never offered in password fields.</li>
+  <li><b>✨ Writing Tools (AI)</b>: off by default. When it is on and you tap an AI action (for example proofread, rewrite or translate), the selected text is sent over an encrypted HTTPS connection to the x2 server for processing, and the result is returned to you. The x2 server uses a third-party AI service provider to produce the result, which handles the text under its own privacy policy. A random ID made on your phone is sent with it (not your account, phone number or device serial), only to allow each phone up to 100 actions a day; the server keeps only today's count and deletes it the next day. The x2 server does not store or log your text. JSON / HTML formatting runs on the phone, and Writing Tools is never offered in password fields.</li>
   <li><b>🎤 Dictation</b>: when you tap 🎤, audio goes to your phone's built-in speech recognition service (usually Google) to be turned into text. x2Board itself does not store or upload recordings.</li>
   <li><b>Handwriting</b>: the recognition model is downloaded from Google the first time you use handwriting. Recognition then runs on the phone, and your handwriting is not uploaded.</li>
   <li><b>Autofill</b>: password, code and address suggestions come from the Android autofill service you chose (such as Google). x2Board only displays them.</li>
